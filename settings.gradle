@@ -1,3 +1,5 @@
 rootProject.name = projectName
 include 'fetcher-api'
+include 'fetcher-api:integration-test'
+findProject(':fetcher-api:integration-test')?.name = 'integration-test'
 
