@@ -1,13 +1,16 @@
 plugins {
     id 'java'
+    id 'idea'
 }
 
-group 'gosk.szymon'
-version '1.0-SNAPSHOT'
+group projectGroup
+version projectVersion
 
 repositories {
     mavenCentral()
 }
+
+apply from: "${rootDir}/gradle/test.gradle"
 
 test {
     useJUnitPlatform()

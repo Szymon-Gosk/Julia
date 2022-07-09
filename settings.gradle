@@ -1,5 +1,3 @@
-rootProject.name = 'Julia'
-include 'dev'
-include 'api-processor'
+rootProject.name = projectName
 include 'fetcher-api'
 

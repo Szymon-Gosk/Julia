@@ -4,8 +4,10 @@ plugins {
     id 'java'
 }
 
-group = 'gosk.szymon'
-version = '1.0-SNAPSHOT'
+group = projectGroup
+version = projectVersion
+
+apply from: "${rootDir}/gradle/test.gradle"
 
 repositories {
     mavenCentral()
@@ -30,4 +32,9 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+
+springBoot {
+    buildInfo()
+    mainClass.set('gosk.szymon.FetcherApiApplication.java')
 }
