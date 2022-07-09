@@ -1,0 +1,5 @@
+rootProject.name = 'Julia'
+include 'dev'
+include 'api-processor'
+include 'fetcher-api'
+
