@@ -9,7 +9,13 @@ import lombok.Getter;
 public enum DataSource {
 
     AGENCY("agency"),
-    STOP("stop");
+    DATES_RANGE("dates.range"),
+    EXPEDITION_DATA("expedition.data"),
+    ROUTE("route"),
+    STOP("stop"),
+    STOP_DISPLAY("stop.display"),
+    STOP_ROUTE_RELATION("stop.route.relation"),
+    TRIP("trip");
 
     @Getter
     private final String key;
